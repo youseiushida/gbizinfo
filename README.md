@@ -2,6 +2,9 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/gbizinfo.svg)](https://pypi.org/project/gbizinfo/)
 [![Python](https://img.shields.io/pypi/pyversions/gbizinfo.svg)](https://pypi.org/project/gbizinfo/)
+[![Context7 Indexed](https://img.shields.io/badge/Context7-Indexed-ECFDF5)](https://context7.com/youseiushida/gbizinfo)
+[![Context7 llms.txt](https://img.shields.io/badge/Context7-llms.txt-ECFDF5)](https://context7.com/youseiushida/gbizinfo/llms.txt)
+
 
 **gbizinfo** は、[gBizINFO（法人活動情報）](https://info.gbiz.go.jp/) の REST API v2 に対応した Python クライアントライブラリです。法人検索・法人番号指定取得・差分更新の全エンドポイントをサポートし、同期・非同期クライアント、自動ページング、ローカルキャッシュ、リトライ、レート制限を提供します。内部の HTTP 通信には [httpx](https://github.com/encode/httpx) を使用しています。
 
