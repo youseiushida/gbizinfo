@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "item": "corporate_number",
+      "message": "法人番号の形式が不正です。"
+    }
+  ],
+  "id": "err-400-001",
+  "message": "Bad Request"
+}

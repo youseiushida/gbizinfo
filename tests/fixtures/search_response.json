@@ -1,0 +1,25 @@
+{
+  "hojin-infos": [
+    {
+      "corporate_number": "1234567890123",
+      "name": "テスト株式会社",
+      "location": "東京都千代田区",
+      "status": "301",
+      "capital_stock": 10000000,
+      "employee_number": "100",
+      "date_of_establishment": "20100101",
+      "business_summary": "テスト事業",
+      "company_url": "https://example.com"
+    },
+    {
+      "corporate_number": "9876543210123",
+      "name": "サンプル合同会社",
+      "location": "大阪府大阪市",
+      "status": "305",
+      "capital_stock": 5000000,
+      "employee_number": "50"
+    }
+  ],
+  "id": "test-id-001",
+  "message": "成功"
+}

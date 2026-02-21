@@ -1,0 +1,26 @@
+{
+  "hojin-infos": [
+    {
+      "corporate_number": "2180001015846",
+      "name": "トヨタ自動車株式会社",
+      "location": "愛知県豊田市",
+      "status": "301",
+      "capital_stock": 635401790000,
+      "employee_number": "70710",
+      "date_of_establishment": "19370828",
+      "business_summary": "自動車の製造・販売",
+      "company_url": "https://global.toyota/jp/",
+      "certification": [],
+      "commendation": [],
+      "finance": null,
+      "patent": [],
+      "procurement": [],
+      "subsidy": [],
+      "workplace": [],
+      "qualification_grade": "A,A,A,A",
+      "business_items": ["110", "215", "306"]
+    }
+  ],
+  "id": "test-id-002",
+  "message": "成功"
+}

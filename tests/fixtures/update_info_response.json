@@ -1,0 +1,15 @@
+{
+  "hojin-infos": [
+    {
+      "corporate_number": "1234567890123",
+      "name": "更新テスト株式会社",
+      "location": "東京都渋谷区",
+      "update_date": "20240101"
+    }
+  ],
+  "id": "test-id-003",
+  "message": "成功",
+  "totalCount": "150",
+  "totalPage": "2",
+  "pageNumber": "1"
+}
