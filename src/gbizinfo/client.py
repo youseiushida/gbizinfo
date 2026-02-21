@@ -629,7 +629,9 @@ class GbizClient:
         data = self._request("GET", f"/v2/hojin/{corporate_number}/{sub}", params=params)
         resp = HojinInfoResponseV2.model_validate(data)
         infos = resp.hojin_infos or []
-        return HojinInfo.model_validate(infos[0].model_dump(by_alias=True)) if infos else HojinInfo.model_construct(corporate_number="")
+        if not infos:
+            return HojinInfo.model_construct(corporate_number="")
+        return HojinInfo.model_validate(infos[0].model_dump(by_alias=True))
 
     def get_certification(self, corporate_number: str, *, metadata_flg: bool = False) -> HojinInfo:
         """届出・認定情報を取得する。
@@ -1256,7 +1258,9 @@ class AsyncGbizClient:
         data = await self._request("GET", f"/v2/hojin/{corporate_number}/{sub}", params=params)
         resp = HojinInfoResponseV2.model_validate(data)
         infos = resp.hojin_infos or []
-        return HojinInfo.model_validate(infos[0].model_dump(by_alias=True)) if infos else HojinInfo.model_construct(corporate_number="")
+        if not infos:
+            return HojinInfo.model_construct(corporate_number="")
+        return HojinInfo.model_validate(infos[0].model_dump(by_alias=True))
 
     async def get_certification(self, corporate_number: str, *, metadata_flg: bool = False) -> HojinInfo:
         """届出・認定情報を非同期で取得する。
